@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: linear-gradient(to top, #35469f, #8a6eb6cc),
+  background-image: linear-gradient(to top, #31408f, #655f6ecc),
     url("./assets/pexels-maxyne-barcel-10402282\ 1.png");
   background-size: 100vw;
 }
@@ -60,8 +60,10 @@ button {
 }
 
 .button-small {
-  font-size: 2rem;
-  padding: 8px 15px;
+  font-size: 1.5rem;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 .button-large {
@@ -72,6 +74,7 @@ button {
   margin-right: auto;
   display: inline-block;
   padding: 25px;
+  cursor: pointer;
 }
 
 .hero-heading {
