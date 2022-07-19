@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --button-color: #ba0cc5ff;
+}
+
+[aria-label="navbar"] {
+  background: #000000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 5em;
+}
+
+body {
+  font-family: Montserrat;
+  color: white;
+}
+
+.logo {
+  width: 7em;
+  padding-right: 2.5em;
+  border-right: 0.7px solid white;
+}
+
+.line {
+  display: none;
+}
+
+.grow-list {
+  flex: 2;
+  padding-left: 5em;
+}
+
+ul {
+  display: flex;
+  gap: 5em;
+}
+
+li {
+  cursor: pointer;
+}
+
+li:first-of-type::after {
+  width: 0;
+  height: 0;
+  border: 0.313em solid transparent;
+  border-bottom: none;
+  border-top-color: #f2f1f1;
+  content: "";
+  vertical-align: middle;
+  display: inline-block;
+  position: relative;
+  right: -0.313em;
+}
+
+li {
+  display: inline-block;
+}
+
+[aria-label="hero"] {
+  background: url("./assets/bg.png");
+  background-size: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-heading {
+  margin: 5% 10% 1% 10%;
+  font-size: 5em;
+}
+
+button {
+  color: white;
+  background: var(--button-color);
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.hero-description {
+  font-size: 1.5em;
+  margin-bottom: 3%;
+}
+
+.button-large {
+  font-size: 1.4em;
+  padding: 0.5em 0.7em;
+  font-weight: bold;
+}
+
+.button-small {
+  font-size: 1em;
+  padding: 0.5em 1.2em;
+}
