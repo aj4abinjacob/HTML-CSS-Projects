@@ -6,3 +6,92 @@
   --heading-dark-blue: #3c2f60;
   --heading-light-blue: #5b57b4;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Poppins;
+  color: var(--writing-color);
+}
+
+/* 40 60 ratio between the two divs */
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.grow-list {
+  width: 70%;
+}
+
+ul {
+  left: 0;
+}
+
+li {
+  display: inline-block;
+  margin: auto 1em;
+  cursor: pointer;
+}
+
+li:hover {
+  color: #000000;
+}
+
+.banner-container:first-child {
+  display: flex;
+}
+
+.btn,
+.nav-button {
+  border: none;
+  background-color: var(--button-color);
+  color: white;
+  font-size: 0.8rem;
+  border-radius: 8px;
+}
+
+.nav-button {
+  padding: 1.5em 2.5em;
+  font-size: 0.8em;
+  font-weight: 400;
+  margin-top: 5%;
+}
+
+.banner-container {
+  display: flex;
+  margin-bottom: 5%;
+}
+
+.banner-container > div:nth-child(1) {
+  margin-left: 10%;
+  margin-top: 5%;
+}
+
+.banner-container > div:nth-child(2) {
+  margin-top: 2%;
+  text-align: right;
+}
+
+.banner-container > img {
+  justify-content: right;
+}
+
+.heading-text {
+  margin-top: 1.5em;
+  font-weight: 600;
+  color: var(--heading-dark-blue);
+  font-size: 3rem;
+}
+
+.heading-text span {
+  color: var(--heading-light-blue);
+}
