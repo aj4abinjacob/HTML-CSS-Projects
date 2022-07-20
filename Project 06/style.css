@@ -88,3 +88,34 @@ nav {
 #midWholePart11 li:nth-child(n + 2) {
   color: #6b6a6cff;
 }
+
+#navMid {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6em;
+}
+
+#navMid h4 {
+  cursor: pointer;
+  padding-bottom: 0.5em;
+}
+
+#navMid h4:hover {
+  border-bottom: 1.5px black solid;
+}
+
+#navEnd {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3em;
+}
+
+#navEnd img:hover {
+  cursor: pointer;
+  border: 2px solid black;
+  padding: 3px;
+  border-radius: 8px;
+}
