@@ -5,6 +5,7 @@
 body {
   font-family: Allerta;
   background-color: #f4f3f8ff;
+  height: 100%;
 }
 nav {
   margin: 3% 4%;
@@ -23,6 +24,9 @@ nav {
 }
 
 #midWhole {
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
   display: flex;
   justify-content: space-between;
 }
@@ -40,7 +44,7 @@ nav {
 }
 
 #monstera {
-  font-size: 5em;
+  font-size: 7em;
   font-weight: 900;
 }
 
@@ -48,6 +52,7 @@ nav {
   display: flex;
   font-size: 0.7em;
   gap: 1em;
+  margin-top: 5%;
   margin-bottom: 5%;
 }
 
@@ -63,9 +68,24 @@ nav {
   align-items: stretch;
 }
 
+.midWholePart13Parts h4{
+  font-size: 2em;
+}
+
 #imgMain {
-  width: 75%;
+  width: 95%;
   /* flex: 1; */
+}
+
+#midWholePart121 {
+  position: relative;
+}
+
+#midWholePart121 img{
+  display: none;
+  /* position: absolute;
+  bottom: 40%;
+  left: 18%; */
 }
 
 #midWholePart121 > div > h1 {
@@ -74,11 +94,23 @@ nav {
   color: white;
   display: inline-block;
   font-weight: 400;
-  font-size: 1.5em;
+  font-size: 2em;
   padding: 10px 20px;
+  padding-right: 40px;
   border-radius: 80vw;
   margin-top: 5%;
   margin-bottom: 5%;
+  position: relative;
+  cursor: pointer;
+}
+
+
+#midWholePart121 > div > h1::after{
+  content:url("./photos/greaterThan.svg");
+  width: .9em;
+  right: 0;
+  position: absolute;
+  
 }
 
 #midWholePart11 li::marker {
@@ -88,6 +120,7 @@ nav {
 #midWholePart11 li:nth-child(n + 2) {
   color: #6b6a6cff;
 }
+
 
 #navMid {
   flex-shrink: 0;
@@ -103,7 +136,7 @@ nav {
 }
 
 #navMid h4:hover {
-  border-bottom: 1.5px black solid;
+  border-bottom: 2px black solid;
 }
 
 #navEnd {
