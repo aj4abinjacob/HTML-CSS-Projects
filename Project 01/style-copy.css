@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+  }
+  
+  :root {
+    --black: #000000;
+    --white: #ffffff;
+  }
+  
+  body {
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav li {
+    display: inline-block;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .square {
+    position: absolute;
+    margin-left: 12%;
+    bottom: 0;
+  }
+  [alt="square-pattern"]{
+    width:350px;
+  }
+  
+  .icons {
+    float: right;
+    bottom: 0;
+  }
+  
+  [alt="person-hero-iamge"] {
+    float: left;
+    position: absolute;
+    bottom: 5%;
+    width: 450px;
+    z-index: 9;
+  }
+  
+  .hero-container-right{
+    position: absolute;
+    margin-right: 0;
+  }

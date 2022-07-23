@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Poppins;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 4% 0 3% 3%;
+    align-items: center;
+}
+
+nav > div{
+    display: flex;
+    gap: 5em;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+.intro-section{
+    display: flex;
+    margin: 4% 3%;
+    flex: 2 1;
+}
+
+.left-section{
+    width: 50vw;
+}
+
+.right-section{
+    width: 50vw;
+}
+
+.left-section h1{
+    font-family: Fredoka+On;
+    font-size: 5rem;
+}
+
+.right-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.discount-content{
+    display: inline-block;
+}   
+
+/* .headphone-div{
+    display: flex;
+    flex-direction: column;
+} */
+
+[alt="headphone"]{
+    flex-grow: 1;
+}
+
+[alt="discount"]{
+    /* order: 2; */
+    /* width: 8em; */
+    transform: translate(10em,0em);
+}
+
+.discount-content{
+    position: relative;
+    transform: translate(2em,-4em);
+    color: white;
+}
+
+.action-btn{
+    width: fit-content;
+}
+
