@@ -2,6 +2,179 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 
+/* Reset browser defaults */
+/* This is taken from Andy Bell css reset
+https://gist.github.com/Asjas/4b0736108d56197fce0ec9068145b421
+The video I got this reset info
+https://youtu.be/h3bTwCqX4ns?t=821
+*/
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* A video explaining why box-sizing should be set to border-box */
+/* https://www.youtube.com/watch?v=WlGQdgy-M6w */
+
+/* Remove default margin */
+*{
+  margin: 0;
+  padding : 0;
+  font: inherit;  
+  }
+  
+/* The font inherit property sets every font to have one size and one weight
+any heading tag would look the sane as a normal text, this forces the user to
+use css for everything.
+*/
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* finished reseting everything */
+
+
 * {
   font-family: "Poppins", sans-serif;
 }
+
+
+/* Saving colors */
+:root{
+  --header-bg-color:hsl(252, 99%, 54%);
+  --header-font-color:hsl(0, 0%, 100%);
+  --default-margin:3%;
+  --test-border: 10px solid red;
+  --h2-font-size: 2.5rem;
+  --header-p-font-color : hsl(252, 100%, 88%);
+}
+
+/*  */
+
+header{
+  padding-top: 1%;
+  position: relative;
+  background: var(--header-bg-color);
+  color: var(--header-font-color);
+
+}
+
+nav{
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  gap: 1em;
+  margin-left: var(--default-margin);
+  margin-right: var(--default-margin);
+}
+
+nav a:hover,svg:hover{
+  cursor: pointer;
+}
+
+.nav-item-active{
+  background-color: var(--header-font-color);
+  color:var(--header-bg-color);
+  border-radius: 3px;
+  padding:.1em .5em;
+}
+
+.nav-item-active+svg{
+  width: 1.2em;
+  height: 1.5em;
+}
+
+.logo{
+  margin-left: var(--default-margin);
+}
+
+.header-text{
+  margin-left: var(--default-margin);
+}
+
+
+
+.header-text+div{
+  position: absolute;
+  right: 0;
+  top:90px;
+  margin-left: auto ;
+}
+
+.header-text:after {
+  content:"";
+  position:absolute;
+  width:100%;
+  bottom:1px;
+  z-index:-1;
+  transform:scale(.9);
+  box-shadow: 0px 0px 8px 2px #000000;
+}
+
+.header-text+div > img{
+  width: 35vw;
+
+}
+
+.header-text{
+  margin-top: 3%;
+  height: 45vh;
+}
+
+.header-text h2{
+  font-size: var(--h2-font-size);
+}
+
+.header-text p{
+  margin-top: 5px;
+  color:var(--header-p-font-color);
+}
+/* header ends here */
+
+.companies{
+  display: flex;
+  margin-left: var(--default-margin);
+  padding: 2%;
+  gap: 2em;
+  width: 50vw;
+  justify-content: space-between;
+}
+
+.companies a{
+  font-family: Righteous;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.api h1{
+  margin-left: var(--default-margin);
+  font-size: 2rem;
+}
+
+.cards{
+  display: grid;
+  gap:2em;
+  margin-left: var(--default-margin);
+}
+
+
+.cards > [class*="card"]{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
