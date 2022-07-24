@@ -75,6 +75,10 @@ body {
   --white:hsl(229, 100%, 96%);
 }
 
+button {
+  cursor: pointer;
+}
+
 /*  */
 
 header{
@@ -213,9 +217,10 @@ nav a:hover,svg:hover{
 } 
 
 .cards::after{
-  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 512'%3E%3C!--! Font Awesome Pro 6.1.1 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons  Inc. --%3E%3Cpath d='M64 448c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L178.8 256L41.38 118.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25l-160 160C80.38 444.9 72.19 448 64 448z'/%3E%3C/svg%3E");
-  width: 100px;
-  height: 70px;
+  /* content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 512'%3E%3C!--! Font Awesome Pro 6.1.1 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons  Inc. --%3E%3Cpath d='M64 448c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L178.8 256L41.38 118.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25l-160 160C80.38 444.9 72.19 448 64 448z'/%3E%3C/svg%3E"); */
+  content: '';
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   background-color: var(--active-elements-color);
   transform: translateY(150px);
@@ -388,6 +393,12 @@ nav a:hover,svg:hover{
   color: var(--white);
 }
 
+.footer-section li:hover{
+  cursor: pointer;
+}
+
+
+
 .footer-left{
   display: flex;
   flex-direction: column;
@@ -403,4 +414,25 @@ nav a:hover,svg:hover{
 
 .footer-left li{
   display: block;
+}
+
+.footer-right > div{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+
+.footer-right ul{
+  margin-top: 3em;
+  display: flex;
+  align-self: flex-end;
+  gap: 1em;
+}
+
+.footer-right li{
+  display: block;
+}
+
+.footer-right img{
+  cursor: pointer;
 }
