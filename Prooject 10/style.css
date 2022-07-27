@@ -180,3 +180,17 @@ h1{
   right: 20rem;
   top: 20rem;
 }
+
+.line-one{
+  position: absolute;
+  right: 0;
+  top: 12.2rem;
+  transform: translateX(11rem);
+
+}
+
+.line-two{
+  position: absolute;
+  right: 0;
+  transform: translateX(5rem);
+}
