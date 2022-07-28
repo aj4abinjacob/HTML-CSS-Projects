@@ -52,3 +52,76 @@ the img in a paragraph the image aligns with the "o" letter but there will be sp
 below for letters like "p" and that space is added to images by default*/
 
 /* Reset Ends here */
+
+:root{
+  --brand-gradient: linear-gradient(108deg, rgba(8,185,247,1) 6%, rgba(5,104,235,1) 92%);
+  --margin-lr: 5%
+}
+
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+nav{
+  margin-top: 2%;
+  margin-left: var(--margin-lr);
+  margin-right: var(--margin-lr);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul{
+  flex-grow: 2;
+  display: flex;
+  gap:2rem;
+  justify-content: end;
+  margin-right: 2rem;
+  align-self: center;
+}
+
+nav ul > li{
+  display: block;
+  cursor: pointer;
+}
+
+
+
+
+
+.nav-butt  h3{
+  background: var(--brand-gradient);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+  padding: .5rem 1rem;
+  
+}
+
+.nav-butt{
+  cursor: pointer;
+  --nav-butt-pad:1px;
+  background: var(--brand-gradient);
+  padding: var(--nav-butt-pad);
+  border-radius: 8px;
+
+}
+
+.inner-nav-butt{
+  background: white;
+  padding: var(--nav-butt-pad);
+  border-radius: 8px;
+}
+
+
+/* main info 1 */
+
+.main-info1{
+  padding-left: var(--margin-lr);
+  padding-right: var(--margin-lr);
+  padding: var(--margin-lr);
+
+}
