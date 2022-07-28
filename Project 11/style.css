@@ -53,13 +53,17 @@ below for letters like "p" and that space is added to images by default*/
 
 /* Reset Ends here */
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 :root{
   --brand-gradient: linear-gradient(108deg, rgba(8,185,247,1) 6%, rgba(5,104,235,1) 92%);
-  --margin-lr: 5%
+  --margin-lr: 5%;
+  --main-info-p-fc: rgb(160, 161, 161);
+  --h2-fs:3rem;
+  --button-gradient: linear-gradient(to bottom, rgba(8,185,247,1) 6%, rgba(5,104,235,1) 92%);
 }
 
 body{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 
@@ -93,9 +97,10 @@ nav ul > li{
 
 
 .nav-butt  h3{
+  font-size: 1rem;
   background: var(--brand-gradient);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	color: transparent;
 
   padding: .5rem 1rem;
   
@@ -103,25 +108,230 @@ nav ul > li{
 
 .nav-butt{
   cursor: pointer;
-  --nav-butt-pad:1px;
-  background: var(--brand-gradient);
-  padding: var(--nav-butt-pad);
-  border-radius: 8px;
+  width: fit-content;
+  background: 
+    linear-gradient(white, white) padding-box,
+    linear-gradient(108deg, rgba(8,185,247,1) 6%, rgba(5,104,235,1) 92%) border-box;
+  border-radius:8px;
+  border: 2px solid transparent;
+  align-self: center;
 
 }
 
 .inner-nav-butt{
   background: white;
-  padding: var(--nav-butt-pad);
   border-radius: 8px;
 }
 
 
 /* main info 1 */
 
-.main-info1{
+.main-info1,.main-info2,.main-info3{
   padding-left: var(--margin-lr);
   padding-right: var(--margin-lr);
   padding: var(--margin-lr);
+  display: flex;
+}
 
+.main-info-text{
+  width: 100%;
+
+ 
+}
+
+.main-info-text h2{
+  font-size: var(--h2-fs);
+  width:40vw;
+}
+
+p{
+  width: 70ch;
+  color: var(--main-info-p-fc);
+  margin: 1.5rem 0 1.5rem 0;
+}
+
+.main-info-img{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.main-info-text button{
+  margin-top: 1rem;
+  font-family: 'Poppins', sans-serif;;
+  cursor: pointer;
+  background: var(--button-gradient);
+  font-size: 1rem;
+  font-weight: 900;
+  border: none;
+  color: white;
+  padding: .9rem 1rem;
+  border-radius: 8px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.sub-info{
+  display: flex;
+  padding-left:var(--margin-lr);
+  padding-right: var(--margin-lr);
+  padding-bottom: 5rem;
+  align-items:center ;
+  justify-content: space-between;
+}
+
+.sub-info h2{
+  font-size: 3rem;
+}
+
+.card-container{
+  margin-left: var(--margin-lr);
+  margin-right: var(--margin-lr);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.cards p{
+  width: 40ch;
+}
+
+[src="images/Domain.svg"]{
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+[src="images/Vector(1).svg"]{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.plan-info{
+  background: var(--brand-gradient);
+  padding-bottom: 10rem;
+}
+.plan-info h2{
+  padding: 3rem;
+  text-align: center;
+  color: white;
+  font-size: var(--h2-fs);
+
+}
+
+.plan-card-container{
+  margin-left: var(--margin-lr);
+  margin-right: var(--margin-lr);
+  display: grid;
+  grid-template-columns: repeat(3,20vw);
+  justify-content: center;
+  gap: 2rem;
+}
+
+.plan-card{
+  background-color: white;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom:2rem;
+}
+
+.plan-card li{
+  display: block;
+}
+
+
+.plan-card li::before{
+  content: '';
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%2354e3bd' d='M243.8 339.8C232.9 350.7 215.1 350.7 204.2 339.8L140.2 275.8C129.3 264.9 129.3 247.1 140.2 236.2C151.1 225.3 168.9 225.3 179.8 236.2L224 280.4L332.2 172.2C343.1 161.3 360.9 161.3 371.8 172.2C382.7 183.1 382.7 200.9 371.8 211.8L243.8 339.8zM512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM256 48C141.1 48 48 141.1 48 256C48 370.9 141.1 464 256 464C370.9 464 464 370.9 464 256C464 141.1 370.9 48 256 48z'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.plan-card h2:nth-of-type(1){
+  font-size: 2rem;
+  color: black;
+  text-align: center;
+}
+
+.plan-card h2:nth-of-type(1)::after{
+  content: '/month';
+  color:hsl(225, 12%, 50%);
+}
+
+.plan-card-header{
+  height:10vh;
+}
+
+
+
+.plan-card-header h3{
+  font-size: 2rem;
+  
+}
+
+
+.plan-card>h4{
+  text-align: center;
+  transform: translateY(-2rem);
+  color:hsl(225, 12%, 50%);
+
+}
+
+.plan-card-header{
+  padding: 1rem;
+  height: 15vh;
+  border-radius: 8px;
+}
+
+#popular-plan{
+  background: hsl(0, 0%, 21%);
+}
+
+#popular-plan h3{
+  color:white;
+}
+
+#popular-plan h4{
+  color:hsl(0, 0%, 89%);
+}
+
+.plan-card-header h4{
+  padding: 1rem;
+  color:hsl(225, 12%, 50%);
+
+}
+
+.plan-card .plan-button{
+  cursor: pointer;
+  width: fit-content;
+  background: 
+    linear-gradient(white, white) padding-box,
+    linear-gradient(108deg, rgba(8,185,247,1) 6%, rgba(5,104,235,1) 92%) border-box;
+  border-radius:8px;
+  border: 2px solid transparent;
+  align-self: center;
+}
+
+.plan-button h3{
+  font-size: 1rem;
+  background: var(--brand-gradient);
+	background-clip: text;
+	color: transparent;
+  padding: .5rem 1rem;
+}
+
+.plan-button-active{
+  cursor: pointer;
+  width: fit-content;
+  border-radius:8px;
+  align-self: center;
+  background: var(--brand-gradient);
+}
+
+.plan-button-active h3{
+  font-size: 1rem;
+
+	color: white;
+  padding: .6rem 1.2rem;
 }
