@@ -73,7 +73,10 @@ nav {
 }
 
 #imgMain {
-  width: 95%;
+  display: block;
+  width: 75%;
+  max-width: 100%;
+  
   /* flex: 1; */
 }
 
