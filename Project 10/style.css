@@ -61,8 +61,12 @@ img {
     --default-margin:5%;
 }
 
+
+
 body{
-    background-color: var(--bg-color);
+    background:url('/backg.png');
+    background-repeat: 0;
+    background-size: cover;
     color: white;
     font-family: Montserrat;
 }
@@ -115,6 +119,8 @@ li{
 
 .contact-info h3{
   width: 19ch;
+  text-align: right;
+  cursor: pointer;
 }
 
 
@@ -122,6 +128,7 @@ li{
   width:30px;
   height: 50px;
   grid-row: span 2;
+  transform: translate(2rem);
 }
 
 main{
@@ -138,8 +145,13 @@ main{
   padding: .7rem 1rem;
   margin-top: 5rem;
   cursor: pointer;
+  transition: color 1s ease-in-out;
 }
 
+.learn-more:hover{
+  background-color: #fefefe;
+  color:#0b1b2e;
+}
 
 h1{
   padding-top: 5rem;
