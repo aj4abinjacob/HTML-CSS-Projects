@@ -64,7 +64,9 @@ below for letters like "p" and that space is added to images by default*/
 
 body{
   font-family: 'Poppins', sans-serif;
+  background-color: hsl(210, 100%, 100%);
 }
+
 
 
 
@@ -338,9 +340,129 @@ p{
   background: var(--brand-gradient);
 }
 
+
+
 .plan-button-active h3{
   font-size: 1rem;
-
 	color: white;
   padding: .6rem 1.2rem;
+}
+
+.testimonies{
+  margin: var(--margin-lr);
+  padding-bottom: var(--margin-lr);
+}
+
+.testimonies > h2{
+  text-align: center;
+  font-size: var(--h2-fs);
+}
+
+.testimonies > p{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+
+
+
+.testimony-card-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  justify-items: center;
+}
+
+.testimony-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: 27vw;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.testimony-card > p{
+  font-size: .9rem;
+  width: 25vw;
+  color:hsl(222, 40%, 24%);
+}
+
+.person-info{
+  display: grid;
+  width:fit-content;
+  grid-template-columns: .5fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+}
+
+.person-info-bubble{
+  width:50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: hsl(0, 0%, 85%);
+  grid-row: span 2;
+}
+
+.person-info h3{
+  font-size: 1rem;
+}
+
+.person-info h4{
+  font-size: .8rem;
+  color:hsl(225, 13%, 69%);
+}
+
+
+.last-main-div{
+  padding: var(--margin-lr);
+  color:white;
+  display: flex;
+  justify-content: space-between;
+  background: var(--brand-gradient);
+}
+
+.last-main-div h2{
+  font-size: var(--h2-fs);
+  width:20ch;
+
+}
+.last-main-div p{
+  color: white;
+}
+
+.last-main-div button{
+  align-self: center;
+  padding: 1rem;
+  color: white;
+  background-color: transparent;
+  border:2px solid white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  margin-left: var(--margin-lr);
+  margin-right: var(--margin-lr);
+  margin-top: var(--margin-lr);
+  line-height: 1.5rem;
+}
+
+footer li{
+  display: block;
+}
+
+footer ul >li:nth-of-type(1){
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+footer ul > :not(li:nth-of-type(1)){
+  font-size: .7rem;
 }
