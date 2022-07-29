@@ -99,7 +99,7 @@ nav ul > li{
 .nav-butt  h3{
   font-size: 1rem;
   background: var(--brand-gradient);
-	background-clip: text;
+	-webkit-background-clip: text;
 	color: transparent;
 
   padding: .5rem 1rem;
@@ -220,7 +220,7 @@ p{
   margin-left: var(--margin-lr);
   margin-right: var(--margin-lr);
   display: grid;
-  grid-template-columns: repeat(3,20vw);
+  grid-template-columns: repeat(3,24vw);
   justify-content: center;
   gap: 2rem;
 }
@@ -267,14 +267,21 @@ p{
 }
 
 .plan-card-header{
-  height:10vh;
+  padding: 1rem;
+  height: 20vh;
+  border-radius: 8px;
 }
+
 
 
 
 .plan-card-header h3{
   font-size: 2rem;
-  
+}
+
+.plan-card-header h4{
+  font-size: 1rem;
+  font-weight: 300;
 }
 
 
@@ -285,11 +292,6 @@ p{
 
 }
 
-.plan-card-header{
-  padding: 1rem;
-  height: 15vh;
-  border-radius: 8px;
-}
 
 #popular-plan{
   background: hsl(0, 0%, 21%);
@@ -323,8 +325,8 @@ p{
 .plan-button h3{
   font-size: 1rem;
   background: var(--brand-gradient);
-	background-clip: text;
-	color: transparent;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
   padding: .5rem 1rem;
 }
 
