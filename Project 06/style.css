@@ -74,9 +74,10 @@ nav {
 
 #imgMain {
   display: block;
-  width: 75%;
+  width: 84.5%;
   max-width: 100%;
-  
+  transform: translateX(6rem);
+  overflow-x: hidden;
   /* flex: 1; */
 }
 
@@ -155,3 +156,4 @@ nav {
   padding: 3px;
   border-radius: 8px;
 }
+
