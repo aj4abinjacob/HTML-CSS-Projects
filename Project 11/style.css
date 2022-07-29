@@ -466,3 +466,11 @@ footer ul >li:nth-of-type(1){
 footer ul > :not(li:nth-of-type(1)){
   font-size: .7rem;
 }
+
+
+
+[src="/images/Layer 2.png"]{
+  padding-top: .5rem;
+  width: 15.5ch;
+
+}
