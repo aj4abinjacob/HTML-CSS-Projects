@@ -1,0 +1,278 @@
+/* This is taken from Andy Bell css reset
+https://gist.github.com/Asjas/4b0736108d56197fce0ec9068145b421
+The video I got this reset info
+https://youtu.be/h3bTwCqX4ns?t=821
+*/
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* A video explaining why box-sizing should be set to border-box */
+/* https://www.youtube.com/watch?v=WlGQdgy-M6w */
+
+/* Remove default margin */
+*{
+  margin: 0;
+  padding : 0;
+  font: inherit;  
+  }
+  
+/* The font inherit property sets every font to have one size and one weight
+any heading tag would look the sane as a normal text, this forces the user to
+use css for everything.
+*/
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+/*  The max-width will help with avoiding horizontal bars in some circumstances
+The display block helps in avoiding space down below the images because images by
+default is an inline element that has the space down below so think of it like adding
+the img in a paragraph the image aligns with the "o" letter but there will be space down
+below for letters like "p" and that space is added to images by default*/
+
+/* Reset Ends here */
+
+/* text scaling */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400');
+
+html {font-size: 100%;} /*16px*/
+
+body {
+  background: hsl(0, 0%, 98%);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+p{
+    font-size: 1rem;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 3.052rem;
+  }
+  
+  h2 {font-size: 2.441rem;}
+  
+  h3 {font-size: 1.953rem;}
+  
+  h4 {font-size: 1.563rem;}
+  
+  h5 {font-size: 1.25rem;}
+  
+  small, .text_small {font-size: 0.8rem;}
+
+
+
+:root{
+    --header-bg-color:hsl(215, 10%, 43%);
+    --header-color:hsl(213, 8%, 73%);
+    --button-color:hsl(151, 23%, 63%);
+    --footer-color:hsl(203, 29%, 9%);
+    --default-margin:5%;
+    --test-border:1px solid red;
+}
+
+p{
+    color:hsl(220, 1%, 59%);
+}
+
+button{
+    cursor: pointer;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: var(--default-margin);
+    padding-right: var(--default-margin);
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: var(--header-bg-color);
+}
+
+nav img{
+    width: 100px;
+}
+
+nav ul{
+    display: flex;
+    gap:2rem;
+    flex-grow: 2;
+    justify-content: end;
+    margin-right: 5rem;
+}
+nav li{
+    display: block;
+    color:hsl(200, 7%, 92%);
+    cursor: pointer;
+    font-size: 1rem;
+    align-items: flex-end;
+}
+
+nav li:hover{
+    border-bottom: 1px solid white;
+}
+
+nav button{
+    color:hsl(200, 7%, 92%);
+    border: 1px solid hsl(219, 6%, 49%);
+    background: transparent;
+    font-size: .8rem;
+    font-weight: 600;
+    padding: .3rem 1.7rem;
+    cursor: pointer;
+}
+
+header{
+    padding: 3% var(--default-margin) 0 var(--default-margin);
+    display: flex;
+    background-color: var(--header-bg-color);
+    padding-bottom: var(--default-margin);
+}
+header img{
+    width:35vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.head-div{
+    width: 100%;
+    color: white;
+}
+
+.head-div:nth-of-type(2){
+}
+
+.head-div h2{
+    font-size: 4rem;
+    line-height: 1.1;
+    font-weight: 700;
+    width: 18ch;
+}
+
+.head-div p{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 45ch;
+}
+
+.header-user-input{
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    background: hsl(0, 0%, 100%);
+    padding-right: .5rem;
+}
+
+header input{
+    border:0;
+    padding: 1rem;
+    width:45ch;
+}
+
+
+header input:focus{
+    outline: white;
+}
+
+header svg{
+    width:28px;
+    margin: 5px;
+}
+
+.header-user-input button{
+    border: none;
+    background: var(--button-color);
+    color: white;
+    padding: .4rem 1rem;
+}
+
+.project-info{
+    margin: var(--default-margin);
+}
+
+.project-info h2{
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.project-info-card-container{
+    display: flex;
+    gap:5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2%;
+}
+
+.project-info-card{
+    width: 100%;
+}
+
+.project-info-card h3{
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+.project-info-card h5{
+    font-size: 1rem;
+    font-weight: 300;
+    color: hsl(0, 0%, 48%);
+}
+.project-info-img{
+    background: url('images/pexels-fauxels-3184325.jpg');
+    background-size: cover;
+    margin-top: 2%;
+    width: 75vw;
+    height: 75vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+    /* body {
+      background-color: lightgreen;
+    } */
+    header {
+        flex-wrap: wrap;
+    }
+  }
