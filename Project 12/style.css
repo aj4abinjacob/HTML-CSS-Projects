@@ -255,12 +255,83 @@ header svg{
     margin-right: auto;
 }
 
+.customer-assurance{
+    margin: var(--default-margin);
+}
+
+.customer-assurance > h2{
+    text-align: center;
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.2;
+}
+.assurance-container{
+    display: grid;
+    gap: 8rem;
+    margin-top: var(--default-margin);
+}
+
+.assurance-card{
+    display: flex;
+    justify-content: space-between;
+    height: 60vh;
+}
+
+.assurance-container h3{
+    font-size: 3rem;
+}
 
 
+.assurance-card:nth-of-type(2)>div:nth-of-type(2){
+    justify-self: flex-start;
+    width: 40%;
+}
 
 
+.assurance-card img:nth-of-type(1){
+    width: 40vw;
+    float: right top;
+}
 
 
+.assurance-card p{
+    padding: 1rem 0 2rem 0;
+    width: 40ch;
+}
+
+
+.assurance-card button{
+    border: none;
+    background: var(--button-color);
+    color: white;
+    padding: .7rem 1rem;
+}
+
+.assurance-card:nth-of-type(odd) > div:nth-of-type(1){
+    margin-left: 5%;
+}
+
+.assurance-img-1{
+    background: url('/images/pexels-fauxels-3184405.jpg');
+    width: 40vw;
+    background-size: contain;
+}
+
+
+.assurance-img-2{
+    background: url('/images/pexels-fauxels-3184603.jpg');
+    width: 40vw;
+    background-size: cover;
+    
+}
+
+
+.assurance-img-3{
+    background: url('/images/pexels-linkedin-sales-navigator-2182969.jpg');
+    width: 40vw;
+    background-size: cover;
+}
 
 
 
