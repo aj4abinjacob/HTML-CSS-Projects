@@ -336,7 +336,87 @@ header svg{
 
 
 
+.about-team{
+    display: flex;
+    justify-content: space-between;
+    margin: var(--default-margin);
+    align-items: center;
+}
 
+.about-team p{
+    width:50ch;
+}
+
+.our-team {
+    display: grid;
+    /* width: 100%; */
+    gap:5rem;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+}
+
+.team-person{
+    width: 300px;
+}
+.our-team img{
+    width:300px;
+}
+
+
+
+.our-team-div{
+    display: flex;
+    gap:1rem;
+    flex-direction: column;
+    margin-top: var(--default-margin);
+    margin-left: var(--default-margin);
+    margin-right: var(--default-margin);
+    justify-content: space-between;
+    /* align-items: ; */
+    padding-bottom: var(--default-margin);
+}
+
+.our-team-div > button{
+    align-self: center;
+    border: none;
+    background: var(--button-color);
+    color: white;
+    padding: .7rem 1rem;
+}
+
+footer{
+    padding-left: var(--default-margin);
+    padding-right: var(--default-margin);
+    padding-bottom: var(--default-margin);
+    background-color: #10181d;
+    color: #85898c;
+    padding-top: 3rem;
+    font-size: .7rem; 
+}
+
+.footer-links{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap:3rem;
+    justify-content: center;
+}
+
+.footer-links li{
+    display: block;
+}
+
+.footer-links ul{
+    line-height: 2;
+}
+
+.footer-links ul >li:nth-of-type(1){
+    color: #ffffff;
+    font-size: .9rem; 
+}
+
+.footer-logo-div{
+    margin-bottom: 2rem;
+}
 
 
 @media screen and (max-width: 800px) {
