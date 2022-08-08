@@ -403,6 +403,7 @@ footer{
 
 .footer-links li{
     display: block;
+    cursor: pointer;
 }
 
 .footer-links ul{
@@ -416,6 +417,13 @@ footer{
 
 .footer-logo-div{
     margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo-div > img:first-of-type(1){
+    height: 85%;
+    width: 90%;
 }
 
 
