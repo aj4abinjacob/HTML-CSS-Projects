@@ -348,10 +348,11 @@ header svg{
 }
 
 .our-team {
-    display: grid;
+    display: flex;
     /* width: 100%; */
+    margin-left: 5% ;
+    margin-right: 5%;
     gap:5rem;
-    grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
 }
 
@@ -391,7 +392,7 @@ footer{
     background-color: #10181d;
     color: #85898c;
     padding-top: 3rem;
-    font-size: .7rem; 
+    font-size: .9rem; 
 }
 
 .footer-links{
@@ -412,7 +413,7 @@ footer{
 
 .footer-links ul >li:nth-of-type(1){
     color: #ffffff;
-    font-size: .9rem; 
+    font-size: 1rem; 
 }
 
 .footer-logo-div{
@@ -421,9 +422,8 @@ footer{
     justify-content: space-between;
 }
 
-.footer-logo-div > img:first-of-type(1){
-    height: 85%;
-    width: 90%;
+.footer-logo-div  img:first-child{
+    width: 8%;
 }
 
 
