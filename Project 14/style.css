@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap");
+/* This is taken from Andy Bell css reset
+https://gist.github.com/Asjas/4b0736108d56197fce0ec9068145b421
+The video I got this reset info
+https://youtu.be/h3bTwCqX4ns?t=821
+*/
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* A video explaining why box-sizing should be set to border-box */
+/* https://www.youtube.com/watch?v=WlGQdgy-M6w */
+
+/* Remove default margin */
+*{
+  margin: 0;
+  padding : 0;
+  /* font: inherit;   */
+  }
+  
+/* The font inherit property sets every font to have one size and one weight
+any heading tag would look the sane as a normal text, this forces the user to
+use css for everything.
+*/
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: Poppins;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+main{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(24, 20%, 95%);
+}
+
+.main-model{
+   background: url(/images/pexels-rfstudio-3819572.jpg);
+   background-size: cover;
+   width: 35vw;
+   background-repeat: no-repeat;
+}
+
+.main-model img{
+    transform: translate(6rem,5rem);
+    width: 110px;
+}
+
+.right-div{
+    margin-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 5%;
+    margin-right: 5%;
+    flex-grow: 2;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+nav div{
+    border-bottom: 2px solid hsl(240, 2%, 10%);
+    margin-right: 2rem;
+    width:25vw;
+    background: hsl(24, 20%, 95%);
+}
+
+nav ul{
+    flex-grow: 2;
+    display: flex; 
+    gap: 5rem;
+    justify-content: flex-end;
+}
+
+nav li{
+    display: block;
+    color: hsl(0, 0%, 59%);
+    cursor: pointer;
+}
+
+nav li:first-of-type{
+    color:hsl(240, 2%, 10%);
+}
+
+.head-content{
+    display: flex;
+    justify-content: space-between;
+    font-family: Merriweather;
+}
+
+h1 {
+    color: #000000;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: .7px;
+}
+
+h1 span{
+    -webkit-text-stroke-width: 0;
+    -webkit-text-fill-color: hsl(0, 0%, 20%);
+}
+
+.head-content .social-icons{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-between;
+ 
+}
+
+.social-icons{
+    margin-top: 1rem;
+}
+
+.social-icons img{
+    max-width: 30px;
+    cursor: pointer;
+}
+
+.social-icons img:nth-of-type(3){
+    width: 25px;
+}
+
+.head-content-writing{
+    display: flex;
+    font-size: 5rem;
+    line-height: 8.5rem;
+}
+
+
+.head-content-writing > span{
+    color:hsl(0, 0%, 55%);
+    line-height: 3rem;
+    font-size: 2rem;
+    margin-top: auto;
+    margin-left: 2rem;
+}
+
+.head-content-writing h1 > span:first-of-type{
+    margin-left: 2ch;
+}
+
+.head-content-writing h1 > span:nth-of-type(2){
+    font-size: 2rem;
+    border: 1px solid red;
+}
+
+
+.right-div button{
+    align-self: flex-end;
+    background-color: hsl(0, 0%, 20%);
+    color: hsl(30, 27%, 96%);
+    border: none;
+    font-size: 1.5rem;
+    padding: .7rem 1rem;
+    margin-top: 2rem;
+}
+
+.sub-content{
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+}
+
+
+.creation-section ul{
+}
+
+
+.creation-section li{
+    display: block;
+    line-height: 4rem;
+    font-size: 1.5rem;
+}
+
+.creation-section li::before{
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-color: black;
+}
+
+.testimony-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.testimony-section img{
+    width: 30vw;
+    height: 30vh;
+    object-fit: cover;
+    object-position: center;
+    margin-top: 1rem;
+}
+
+.testimony{
+    font-size: 1.4rem;
+}
+
+.testimony span:nth-of-type(2){
+}
+
+.sub-content > img{
+    width: 5vw;
+}
