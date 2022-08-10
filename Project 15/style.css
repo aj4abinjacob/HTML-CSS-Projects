@@ -1,0 +1,133 @@
+
+/* This is taken from Andy Bell css reset
+https://gist.github.com/Asjas/4b0736108d56197fce0ec9068145b421
+The video I got this reset info
+https://youtu.be/h3bTwCqX4ns?t=821
+*/
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* A video explaining why box-sizing should be set to border-box */
+/* https://www.youtube.com/watch?v=WlGQdgy-M6w */
+
+/* Remove default margin */
+*{
+  margin: 0;
+  padding : 0;
+  }
+  
+/* The font inherit property sets every font to have one size and one weight
+any heading tag would look the sane as a normal text, this forces the user to
+use css for everything.
+*/
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+/*  The max-width will help with avoiding horizontal bars in some circumstances
+The display block helps in avoiding space down below the images because images by
+default is an inline element that has the space down below so think of it like adding
+the img in a paragraph the image aligns with the "o" letter but there will be space down
+below for letters like "p" and that space is added to images by default*/
+
+/* Reset Ends here */
+
+
+:root{
+    --body-bg-color: #111111;
+    --brand-red: #ef4040;
+    --card-bg-color: #1e1e1e;
+    --main-font-color: #ffffff;
+    --small-font-color: #f8f8f8;
+    --main-margin: 7%;
+    --nav-small-margin: 3%;
+}
+
+
+body{
+    background-color: var(--body-bg-color);
+    color: var(--main-font-color);
+}
+
+header{
+    height: 100vh;
+}
+
+nav{
+    margin-left: var(--nav-small-margin);
+    margin-top: calc( var(--nav-small-margin) - 1%);
+    margin-right: var(--main-margin);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    gap:2rem;
+}
+
+nav li{
+    display: block;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+nav img{
+    box-shadow: inset 0 0 99999px rgba(255, 0, 0, 0.5);
+}
+
+.head-content{
+    display: flex;
+    align-items: center;
+}
+
+.head-content img{
+    width:40vw;
+    
+}
+
+.head-content > div{
+    max-width: 60ch;
+}
+
+.head-content h1{
+    font-size: 4rem;
+}
+
+.head-content h3{
+    color: var(--brand-red);
+
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    padding: .7rem 1rem;
+    color: white;
+}
+
+.head-content button{
+    margin-top: 1rem;
+    background-color: var(--brand-red);
+}
