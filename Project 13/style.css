@@ -280,3 +280,48 @@ nav button{
 .card p{
   width: 25ch;
 }
+
+@media screen and (max-width:800px) {
+  nav ul{
+    display: none;
+  }
+
+  .header-content{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .header-content h1{
+    font-size: 3rem;
+  }
+  
+  .middle-content{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-container{
+    display: grid;
+    gap:2rem;
+    grid-template-columns: repeat(1,1fr);
+  }
+
+  .card{
+    margin: auto;
+  }
+
+  .card img{
+    width: 250px;
+  }
+
+  .middle-content-writing {
+    text-align: center;
+  }
+
+  .card > div:first-of-type{
+    margin-top: 2rem;
+    width: 12vw;
+    margin-bottom: 2re;
+  }
+
+}
