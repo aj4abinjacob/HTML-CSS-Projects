@@ -116,6 +116,8 @@ nav a:hover,svg:hover{
 
 .logo{
   margin-left: var(--default-margin);
+  width: 125px;
+  height: 40px;
 }
 
 .header-text{
@@ -435,4 +437,106 @@ nav a:hover,svg:hover{
 
 .footer-right img{
   cursor: pointer;
+}
+
+
+@media screen and (max-width:600px) {
+
+  /* *{
+    border: 1px solid red;
+  } */
+
+
+  .nav-item:not(:last-child){
+    display: none;
+  }
+
+  .companies{
+    display: flex;
+    width: 95%;
+    justify-content: center;
+  }
+  .header-image{
+    display: none;
+  }
+
+  .header-text{
+    text-align: center;
+  }
+
+  .header-text h2{
+    font-size: 2rem;
+  }
+
+  
+.cards{
+  padding-top: 2rem;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2,1fr);
+  justify-content: center;
+}
+
+.cards > [class*="card"]{
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+}
+
+.card:last-of-type{
+  grid-column: span 2;
+}
+
+.blog-author{
+  transform: translate(40%,-90%);
+  width: fit-content;
+}
+
+.blog-bottom{
+  float: right;
+  transform: translateX(65vw);
+  width: fit-content;
+}
+
+.faq-content h2{
+  line-height: 1.2;
+}
+
+.faq-image{
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
+.download-section > .download-content >h1{
+  font-size: 1.5rem;
+}
+
+.blog-heading{
+  padding-bottom: 1rem
+}
+
+.footer-section .list{
+  display: none;
+}
+
+.download-email{
+  display: flex;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+svg.nav-item{
+  display: none;
+}
+
+form {
+  display: flex;
+}
+
+  
 }
