@@ -170,7 +170,6 @@ header img{
     font-size: 4rem;
     line-height: 1.1;
     font-weight: 700;
-    width: 18ch;
 }
 
 .head-div p{
@@ -273,8 +272,15 @@ header svg{
 }
 
 .assurance-card{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     justify-content: space-between;
+}
+
+
+
+
+.assurance-card > *{
     height: 60vh;
 }
 
@@ -285,7 +291,6 @@ header svg{
 
 .assurance-card:nth-of-type(2)>div:nth-of-type(2){
     justify-self: flex-start;
-    width: 40%;
 }
 
 
@@ -297,7 +302,6 @@ header svg{
 
 .assurance-card p{
     padding: 1rem 0 2rem 0;
-    width: 40ch;
 }
 
 
@@ -428,10 +432,104 @@ footer{
 
 
 @media screen and (max-width: 800px) {
-    /* body {
-      background-color: lightgreen;
+    
+    /* *{
+        outline: 1px solid red;
     } */
+    
+    nav ul {
+      display: none;
+    }
     header {
         flex-wrap: wrap;
     }
+
+    [src="/images/pexels-fauxels-3183197.jpg"]{
+        width: 100vw;
+    }
+
+    .head-div h2{
+        font-size: 3rem;
+    }
+
+    .head-div p{
+        text-align: center;
+    }
+
+    header input{
+        width:100%;
+    }
+
+    .header-user-input{
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 0;
+        }
+
+    .project-info h2{
+        font-size: 2.5rem;
+    }
+
+    .project-info-card-container{
+    display: grid;
+    margin-top: 2rem;
+    grid-template-columns: repeat(2,1fr);
+    }
+
+    .our-team{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo-div > img:first-of-type{
+        width: 90px;
+        height: 30px;
+    }
+
+    .footer-links{
+        display: flex;
+        text-align: center;
+    }
+    
+    .footer-links > ul:nth-of-type(n+4){
+        display: none;
+
+    }
+
+    .assurance-card{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        text-align: center;
+    }
+
+    .assurance-card div:nth-of-type(2){
+        background-repeat: no-repeat;
+    }
+
+    .assurance-card .imga{
+        width: 100%;
+    }
+
+    .assurance-img-1{
+        grid-row-start: 1;
+    }
+
+    .assurance-img-3{
+        grid-row-start: 1;
+    }
+
+    .assurance-card:nth-of-type(2)> div:last-of-type{
+        width: 100%;
+    }
+
+    .about-team{
+        display: grid;
+        margin-top: 9rem;
+        margin-left: 0;
+    }
+
+
+
+
   }
