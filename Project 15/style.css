@@ -357,3 +357,59 @@ footer{
     margin-left: 10vw;
     margin-bottom: 1rem;
 }
+
+@media screen and (max-width:800px){
+    main{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .skills-div{
+        grid-template-columns: repeat(2,1fr);  
+    }
+    .skill-card{
+        width: fit-content;
+    }
+
+    .experience-card{
+        width: 100%;
+        grid-row: span 1;
+    }
+
+    .small-card{
+        width: 100%;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    .featured-projects-header{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        justify-content: space-between;
+    }
+
+    .featured-projects-header p{
+        width: 45ch;
+    }
+
+    .featured-projects-card-container{
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+    }
+
+    .contact-div{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .contact-div p{
+        width: 40ch;
+    }
+
+  
+
+
+   
+}
