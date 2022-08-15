@@ -60,6 +60,12 @@ body{
 }
 
 
+[alt="logo"]{
+    width: 130px;
+    height: 40px;
+}
+
+
 
 
 nav{
@@ -137,4 +143,23 @@ nav button{
     border-radius: 16px;
     height: fit-content;
     padding: .3em .7em;
+}
+
+@media screen and (max-width:800px){
+    .nav-item{
+        display: none;
+    }
+
+    .signin-btn{
+        width: 150px;
+    }
+
+    .left-section{
+        width: 70vw;
+    }
+    
+    .left-section h4{
+        width: 25ch;
+    }
+    
 }
