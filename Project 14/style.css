@@ -265,8 +265,110 @@ h1 span{
 
 
 @media screen and (max-width:800px) {
-    nav{}
-    h1{
-        font-size: 4.5rem;
+
+    /* *{
+        outline: 1px solid red;
+    } */
+
+    body{
+        background:hsl(24, 20%, 95%);
     }
+
+    nav ul{
+        display: none;
+    }
+
+    .right-div{
+        margin: 2%;
+        position: relative;     
+    }
+
+    .left-div{
+        display: none;
+    }
+
+    .head-content .social-icons{
+        flex-direction: row;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .head-content-writing{
+        position: absolute;
+        transform: translateY(-30px);
+    }
+
+    .social-icons img:nth-of-type(3){
+        width: 15px;
+    }
+
+    
+    h1{
+        font-size: 4rem;
+        line-height: 1.1;
+    }
+
+    .head-content-writing{
+        position: relative;
+    }
+
+    .head-content-writing > span{
+        margin: 0;
+        position: absolute;
+        font-size: 1.8rem;
+        transform: translate(280px,100px);
+    }
+
+   .sub-content{
+    display: flex;
+    margin-top: 2rem;
+   }
+
+   .check-pkg-btn{
+    margin-top: 1rem;
+   }
+
+   .long-arrow{
+    display: none;
+   }
+
+   .creation-section > ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35vw;
+   }
+
+   .creation-section > ul::before{
+    transform: translateY(0);
+   }
+
+   
+
+   .creation-section > ul >li{
+    font-size: 1rem;
+   }
+
+   .testimony{
+    position: relative;
+    width: 50vw;
+    font-size: medium;
+   }
+
+   .testimony-section img{
+    width: 50vw;
+    border: 1px solid red;
+   }
+
+
+
+   .testimony svg{
+    float: left;
+    width: 20px;
+   }
+
+
+
+  
 }
